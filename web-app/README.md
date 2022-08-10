@@ -1,40 +1,21 @@
-# Getting Started with Redux Product Application
+# ReactJS, Redux, Jest & Webpack Boilerplate
+Getting Started with [ReactJS](https://reactjs.org/), [Redux](https://redux.js.org/), [Jest](https://jestjs.io/) and [Webpack](https://webpack.js.org/)
 
-## Redux Architecture
-![Alt Text](https://d33wubrfki0l68.cloudfront.net/01cc198232551a7e180f4e9e327b5ab22d9d14e7/b33f4/assets/images/reduxdataflowdiagram-49fa8c3968371d9ef6f2a1486bd40a26.gif)
+## Getting Started
 
-![Alt Text](https://github.com/Sajid576/redux-products-service/blob/master/redux_analogy.png)
+### Dependencies:
+Tools needed to run this app: `node` and `npm`
 
-![Alt Text](https://github.com/Sajid576/redux-products-service/blob/master/redux_life_cycle.png)
+### Installing:
+* `npm install` to install dependencies
+* `npm install -g json-server` to get a full fake REST API (Optional, is used in the example)
 
+### Running the App:
+After you have installed all dependencies, you may run the app.
 
-Middleware is needed for performing asynchronous operations inside of synchronous action creators.
+- `json-server --watch src/services/elements.json` (Optional, is used in the example)
+- `npm start`
+- Go to `http://localhost:8080/`
 
-
-## Project Setup
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
+### Running Tests:
+* `npm test`
