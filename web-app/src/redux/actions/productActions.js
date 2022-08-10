@@ -1,11 +1,11 @@
-import fakestoreapi from '../../apis/fakeStoreApi';
-import { ActionTypes } from '../contants/action-types';
-import { callGetApi } from '../../lib/api';
+import fakestoreapi from "../../apis/fakeStoreApi";
+import { ActionTypes } from "../constants/action-types";
+import { callGetApi } from "../../lib/api";
 
 export const fetchProducts = () => async (dispatch) => {
-  const response = await callGetApi('http://localhost:7000/api/product');
+  const response = await callGetApi("http://localhost:7000/api/product");
   // const response = await fakestoreapi.get('/products');
-  console.debug('response', response);
+  console.debug("response", response);
   dispatch({ type: ActionTypes.FETCH_PRODUCTS, payload: response.data });
 };
 
