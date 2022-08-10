@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-jest-boilerplate",
+  "name": "product-list-web-app",
   "version": "1.0.0",
   "description": "Getting Started with ReactJS, Redux, Jest and Webpack",
   "main": "index.js",
