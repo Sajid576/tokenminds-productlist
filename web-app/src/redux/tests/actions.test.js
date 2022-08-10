@@ -1,10 +1,15 @@
-import { setProducts } from "../actions/productActions";
+import { setProducts, selectedProduct } from "../actions/productActions";
 import { ActionTypes } from "../constants/action-types";
 
-describe("product actions", () => {
-  it("Handle fetchProducts action", () => {
+describe("testing product actions", () => {
+  it("SET_PRODUCTS Action", () => {
     expect(setProducts()).toEqual({
       type: ActionTypes.SET_PRODUCTS,
+    });
+  });
+  it("SELECTED_PRODUCT Action", () => {
+    expect(selectedProduct()).toEqual({
+      type: ActionTypes.SELECTED_PRODUCT,
     });
   });
 });
